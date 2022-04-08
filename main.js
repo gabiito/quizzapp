@@ -1,7 +1,6 @@
 import './style.css'
 import Swiper from 'swiper';
 import "swiper/css";
-import Swal from 'sweetalert2'
 import 'sweetalert2/dist/sweetalert2.min.css'
 
 const score = {
