@@ -1,13 +1,70 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="favicon.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite App</title>
-  </head>
-  <body>
-    <div id="app"></div>
-    <script type="module" src="/main.js"></script>
-  </body>
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Vite App</title>
+</head>
+
+<body>
+  <div id="app">
+    <div class="swiper">
+      <!-- Additional required wrapper -->
+      <div class="swiper-wrapper">
+        <!-- Slides -->
+        <div class="swiper-slide">
+          <div class="quizz" data-onquestion="1">
+            <div class="question">
+              <span>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Exercitationem neque molestias ut magnam deserunt?</span>
+            </div>
+            <div class="answers">
+              <span class="answer" data-grupo="A" data-selected="false">Lorem ipsum dolor sit amet consectetur</span>
+              <span class="answer" data-grupo="B" data-selected="false">Lorem ipsum dolor sit amet consectetur</span>
+              <span class="answer" data-grupo="C" data-selected="false">Lorem ipsum dolor sit amet consectetur</span>
+              <span class="answer" data-grupo="D" data-selected="false">Lorem ipsum dolor sit amet consectetur</span>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="quizz" data-onquestion="2">
+            <div class="question">
+              <span>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Exercitationem neque molestias ut magnam deserunt?</span>
+            </div>
+            <div class="answers">
+              <span class="answer" data-grupo="A" data-selected="false">Lorem ipsum dolor sit amet consectetur</span>
+              <span class="answer" data-grupo="D" data-selected="false">Lorem ipsum dolor sit amet consectetur</span>
+              <span class="answer" data-grupo="C" data-selected="false">Lorem ipsum dolor sit amet consectetur</span>
+              <span class="answer" data-grupo="B" data-selected="false">Lorem ipsum dolor sit amet consectetur</span>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="quizz" data-onquestion="3">
+            <div class="question">
+              <span>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Exercitationem neque molestias ut magnam deserunt?</span>
+            </div>
+            <div class="answers">
+              <span class="answer" data-grupo="B" data-selected="false">Lorem ipsum dolor sit amet consectetur</span>
+              <span class="answer" data-grupo="D" data-selected="false">Lorem ipsum dolor sit amet consectetur</span>
+              <span class="answer" data-grupo="A" data-selected="false">Lorem ipsum dolor sit amet consectetur</span>
+              <span class="answer" data-grupo="C" data-selected="false">Lorem ipsum dolor sit amet consectetur</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <button class="btn confirm-slection">Confirmar</button>
+    </div>
+  </div>
+  <div class="popup">
+    <div class="popup-main">
+      <h2 class="popup-title">titulo</h2>
+      <div class="popup-context">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque doloremque blanditiis, veniam repudiandae ullam eos porro nam nobis aperiam aliquid quas dolore alias! Illum, nihil! Culpa soluta hic harum quam.</div>
+      <button class="btn close">Cerrar</button>
+    </div>
+  </div>
+  <script type="module" src="/main.js"></script>
+</body>
+
 </html>
